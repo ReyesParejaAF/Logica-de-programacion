@@ -1,0 +1,69 @@
+<meta charset="utf-8">
+
+HTML
+<br>
+
+<!-- aca esta escrito en html porque esta sin comillas -->
+
+estoy definiendo la edad de David
+
+<br>
+<br>
+
+JavaScript
+<br>
+
+<!-- document.write se utiliza para usar codigo html dentro de JS -->
+
+<!-- los parentesis en JS se utilizan para definir que esa funcion esta esperando un parametro -->
+
+<!-- si se escribe en JS sin comillas en numero lo toma como caracter numerico y no de texto pero si se ecribe entre comillas lo toma como texto -->
+
+<!-- Se crea la variable anho para que el compilador calcule los años del estudiante sin necesidad de actualizar uno por uno, IMPORTANTE no poner la variable declarada entre comillas -->
+
+
+<script>
+
+	var anho =  2022;
+
+	document.write("El chapulin tiene " + (anho - 1870) + " años <br>");
+	document.write("Sofia tiene " + (anho - 2000) + " años <br>");
+	document.write("<br>");
+	document.write("<br>");
+
+	anho = 2050;
+	
+	document.write("Anubis tiene " + (anho - 100) + " años <br>");
+	document.write("Orus tiene " + (anho - 50) + " años<br>");
+	document.write("<br>");
+	document.write("<br>");
+
+	var edadAfrodita = 1953;
+	var edadAthena = 1967;
+	var edadPersefone = 1979;
+	var nombre1 = "Afrodita";
+	var nombre2 = "Athena";
+	var nombre3 = "Persefone";
+	var promedio = (edadAfrodita + edadAthena + edadPersefone) / 3;
+	anho = 2100;
+	
+	document.write("Afrodita" + (anho - 150) + " años <br>");
+	document.write("Athena " + (anho - 140) + " años<br>");
+	document.write("Persefone" + (anho - 130) + " años<br>");
+	document.write("El promedio de las edades de " + nombre1 + ", " + nombre2 + " y " + nombre3 + " es: " + Math.round (promedio));
+	document.write("<br>");
+	document.write("<br>");
+
+	document.write("La edad de David es...<br>");
+	document.write("30 <br>");
+	document.write("El año de nacimiento de David es..<br>");
+	document.write(2021 - 30);
+	document.write("<br>");
+	document.write("El promedio de edad de David, Sofia y Naomi es...<br>");
+	document.write((30 + 23 + 10) / 3);
+	document.write("<br>");
+	document.write("La suma de las edades de Sofia, David y Naomi es <br>" + (30 + 23 + 10));
+	document.write("<br>");
+	
+</script>
+
