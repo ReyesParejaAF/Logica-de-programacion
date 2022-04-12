@@ -1,0 +1,56 @@
+<meta charset="utf-8">
+
+<h1>CALCULANDO EL IMC</h1>
+
+<script>
+	function saltarlinea() {
+
+		document.write("<br>");
+		document.write("<br>");
+
+	}
+	
+	function imprimir(frase) {
+
+		document.write(frase);
+		saltarlinea();
+
+	}
+
+	//La funcion hace calculos que yo especifique en la funcion y despues ma retorna un resultado, 
+
+	function calcularImc(peso,altura) {
+
+		imc = peso / (altura * altura);
+		return imc; 
+		
+
+	}
+
+	var imcDavid = calcularImc(68,1.70);
+	var imcSofia = calcularImc(48,1.48);
+
+	imprimir("El promedio de IMC calculado de David y Sofia es: " + (imcDavid + imcSofia)/2);
+
+	//En esta linea dew codigo se busca que se simplifique aun mas el codigo
+
+	function calcularImc2(peso,altura) {
+
+		return(peso / (altura * altura));
+
+	}
+
+	//La funcion pronpt sirve para que el usuario iscriba parametros en un pop-up para despues ser procesados y arrojar un resultado 
+
+	imprimir("El promedio de IMC calculado de Naomi y Molly es: " + (calcularImc2(40,28) + calcularImc2(45,20))/2);
+
+	nombre = prompt("Informe su nombre");
+	pesoInfromado = prompt(nombre + ", Informe su peso");
+	alturaImformada = prompt(nombre + ", Informe su altura");
+
+	imcCalculado = calcularImc2(pesoInfromado,alturaImformada);
+
+	imprimir(nombre + ", su IMC calculado es: " + imcCalculado);
+
+
+</script>
