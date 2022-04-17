@@ -21,36 +21,70 @@
 
 	function calcularImc(peso,altura) {
 
-		imc = peso / (altura * altura);
-		return imc; 
-		
+		return (peso / (altura * altura));
+	
 
 	}
 
-	var imcDavid = calcularImc(68,1.70);
-	var imcSofia = calcularImc(48,1.48);
-
-	imprimir("El promedio de IMC calculado de David y Sofia es: " + (imcDavid + imcSofia)/2);
-
-	//En esta linea dew codigo se busca que se simplifique aun mas el codigo
-
-	function calcularImc2(peso,altura) {
-
-		return(peso / (altura * altura));
-
-	}
-
-	//La funcion pronpt sirve para que el usuario iscriba parametros en un pop-up para despues ser procesados y arrojar un resultado 
-
-	imprimir("El promedio de IMC calculado de Naomi y Molly es: " + (calcularImc2(40,28) + calcularImc2(45,20))/2);
-
+	
 	nombre = prompt("Informe su nombre");
-	pesoInfromado = prompt(nombre + ", Informe su peso");
-	alturaImformada = prompt(nombre + ", Informe su altura");
+	pesoInformado = prompt(nombre + ", Informe su peso");
+	alturaInformada = prompt(nombre + ", Informe su altura");
 
-	imcCalculado = calcularImc2(pesoInfromado,alturaImformada);
+	imcCalculado = calcularImc(pesoInformado,alturaInformada);
 
 	imprimir(nombre + ", su IMC calculado es: " + imcCalculado);
+
+	
+	if (imcCalculado < 18.5) {
+
+		imprimir("Desnutricion");
+	
+	}
+
+	if (imcCalculado >= 18.5 && imcCalculado < 24.9) {
+
+		imprimir("Normopeso");
+
+	}
+
+	if (imcCalculado >= 25 && imcCalculado < 26.9) {
+
+		imprimir("Sobrepeso grado 1");
+
+	}
+
+	if (imcCalculado >= 27 && imcCalculado < 29.9) {
+
+		imprimir("Sobrepeso grado 2");
+
+	}
+
+	if (imcCalculado >= 30 && imcCalculado < 34.9) {
+
+		imprimir("Obesidad tipo 1");
+
+	}
+
+	if (imcCalculado >= 35 && imcCalculado < 39.9) {
+
+		imprimir("Obesidad tipo 2");
+
+	}
+
+	if (imcCalculado >= 40 && imcCalculado < 49.9) {
+
+		imprimir("Obesidad tipo 3 (MORBIDA)");
+
+	}
+
+	if (imcCalculado >= 50) {
+
+		imprimir("Obesidad tipo 4 (EXTREMA)");
+
+	}
+
+
 
 
 </script>
